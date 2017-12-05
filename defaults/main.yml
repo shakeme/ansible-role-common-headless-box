@@ -1,0 +1,5 @@
+---
+# defaults file for common
+
+role_common_enable: no
+

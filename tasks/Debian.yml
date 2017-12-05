@@ -1,0 +1,12 @@
+---
+# tasks Debian
+
+- name: Ensure essential packages
+  apt:
+    name: "{{ item }}"
+    state: present
+  become: true
+  with_items: "{{ debian_essential_packages }}"
+
+# vim: ai et st=2 sts=2 sw=2
+
